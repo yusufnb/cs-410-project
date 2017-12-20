@@ -1,0 +1,100 @@
+{
+	"info": {
+		"name": "cs-410",
+		"_postman_id": "941ad6d0-cb8a-c030-dfd3-f01f9c9e698c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /cliff",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "?text",
+					"query": [
+						{
+							"key": "text",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": "Send text to CLIFF parser for processing. Returns location of the text data."
+			},
+			"response": []
+		},
+		{
+			"name": "GET /list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "?lattitude1&longitude1&lattitude2&longitude2&date_from&date_to",
+					"query": [
+						{
+							"key": "lattitude1",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "longitude1",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "lattitude2",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "longitude2",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "date_from",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "date_to",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": "Get a list of blog items corresponding to geo temporal boundaries / limits"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "?date&text",
+					"query": [
+						{
+							"key": "date",
+							"value": "",
+							"equals": false
+						},
+						{
+							"key": "text",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": "Post blog date, text for adding to the searchable index"
+			},
+			"response": []
+		}
+	]
+}

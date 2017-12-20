@@ -1,0 +1,37 @@
+{
+  "name": "cs-410-project",
+  "version": "1.0.0",
+  "description": "CS 410 project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusufnb/cs-410-project.git"
+  },
+  "author": "Yusuf Bhabhrawala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusufnb/cs-410-project/issues"
+  },
+  "homepage": "https://github.com/yusufnb/cs-410-project#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sqlstring": "^2.3.0",
+    "sync-mysql": "^3.0.1",
+    "sync-request": "^4.1.0",
+    "text-miner": "^1.0.5",
+    "xml2js": "^0.4.19"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "blogs/*",
+      "geoblogs/*",
+      "public/*"
+    ]
+  }
+}
