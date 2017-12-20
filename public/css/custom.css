@@ -1,0 +1,13 @@
+.fill {
+	min-height: 100%;
+    height: 100%;
+}
+
+html, body {
+    height:100%; /*both html and body*/
+}
+body {
+    margin: 0; /*reset default margin*/
+}
+
+.slider.slider-horizontal {width: 600px;}
