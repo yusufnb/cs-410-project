@@ -11,3 +11,5 @@ body {
 }
 
 .slider.slider-horizontal {width: 600px;}
+
+#blog-text {overflow: scroll;}

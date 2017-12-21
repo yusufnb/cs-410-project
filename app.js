@@ -21,5 +21,10 @@ app.get('/list', function(req, res) {
 	gt.fetch(req, res);
 });
 
+app.get('/item', function(req, res) {
+	var gt = require('./modules/geoTemporalSearch');
+	gt.getItem(req, res);
+})
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
 
